@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Little Mini Garden</title>
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/font.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="js/popup.js"></script>
+  <script src="js/portfolio_button.js"></script>
+  <script src="js/portfolio_button_event.js"></script>
+  <script src="js/portfolio_button_sns.js"></script>
+  <script src="js/portfolio_button_news.js"></script>
+  <script src="js/monitorSubClick.js"></script>
+  <script src="js/clickslide.js"></script>
+  <script src="js/mailBox.js"></script>
+  <script src="js/scroll.js"></script>
+</head>
+
+<body>
+  <!--화면 영역-->
+  <div id="wrap">
+
+    <!--포트폴리오 소개-->
+    <div class="contentOpen">
+      <div class="content_pic01"></div>
+      <p class="txt_garden txt_stroke">GARDEN<p class="txt_stroke_garden">GARDEN</p></p>
+      <span class="txt_my">MY</span>
+      <span class="txt_little">LITTLE</span>
+      <span class="txt_yy">2022-2024</span>
+      <span class="txt_yoon">Yoon’s graphic Portfolio</span>
+      <div class="name"></div>
+      <span class="txt_sentence">
+        정원과 포트폴리오는 모두 만든 이의 아름다움과<br>
+        가치를 창조하고 전달하는 역할을 한다.<br>
+        치밀한 계획, 꾸준한 관리, 그리고 개성 있는 표현이<br>
+        요구되며, 시간이 지남에 따라 그 가치가 점점 커지는<br>
+        <b>나의 포트폴리오는 내가 가꾼 ‘정원’이다.</b>
+      </span>
+    </div>
+
+    <!--경력 및 학력 소개-->
+    <div id="Box01">
+      <div class="introduce">
+        <img src="img/icon01.gif" alt="icon">
+        <p>Yoon’s Information</p>
+      </div>
+      <!--자기 소개-->
+      <div class="aboutMe">
+        <div class="aboutMe_box01">
+          <div class="picBox_first"></div>
+          <div class="picBox_sec"></div>
+        </div>
+        <div class="aboutMe_box02"> 
+          <div class="aboutMe_title">
+           <p class="title">자기 소개</p>
+           <p class="subtitle">about Me</p>
+         </div>
+         <div class="aboutMe_TXT">
+           <p>· 기술적 지식과 소통 능력을 겸비하여 혁신적인 아이디어를 현실로 구현할 수 있는 디자이너.</p>
+           <p>· 개발자, 마케터, 운영진 등 다양한 직군의 사람들과 협력하여 프로젝트를 진행하는 디자이너.</p>
+           <p>· 이성적으로 상황을 분석하고, 최선의 해결책을 찾기 위해 중립적이고 논리적인 접근을 중시하는 디자이너.</p>
+           <p><b>무엇보다 손이 빠른 사람. ‘윤혜주’.</b></p>
+         </div>
+         </div>
+      </div>
+    </div>
+
+    <!--경력 소개-->
+    <div id="Box02">
+      <div class="aboutCareer"></div>
+        <div class="Career_box01">
+          <div class="picBox_third"></div>
+          <div class="picBox_forth"></div>
+        </div>
+        <div class="Career_box02">
+          <div class="Career_title">
+            <div class="Career_TXT">
+              <p class="title career">경력</p>
+              <p class="subtitle career_sub">about My Career</p>
+           </div>
+           <div class="Career_list">
+             <div class="Career_DD">
+              <p class="career_date"><b>2022. 03 - 2024. 08 엑스퍼트 컨설팅</b></p>
+              <p>경기도 지식과 시흥학습 쏙 프로젝트에 메인 디자이너 및 기획자로 참여</p>
+            </div>
+            <div class="Career_DD">
+              <p class="career_date"><b>2019. 12 - 2021. 04 메타넷엠플랫폼</b></p>
+              <p>불법물 관련 모니터링 업무 진행</p>
+            </div>
+            <div class="Career_DD">
+              <p class="career_date"><b>2017. 4 - 2019. 11 주식회사 우리술</b></p>
+              <p>상품 생산, 판매, 유통에 필요한 모든 시각 및 산업디자이너로서 업무 진행</p>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--작업물 소개-->
+      <div id="Box03">
+        <div class="workout">
+          <img src="img/icon02.gif" alt="icon">
+          <p>Yoon’s Workout</p>
+          <span>시간과 열정의 발자취</span>
+        </div>
+        <div class="workout_list">
+          <div class="workoutBox">
+            <div class="workout_TXT">
+              <p class="workout_title">이벤트</p>
+              <p class="workout_date">2022-2024</p>
+            </div>
+            <p class="workout_line"></p>
+            <div class="workout_Pic_event"></div>
+            <button class="workout_button workout_button01">보러 가기</button>
+          </div>
+          <div class="workoutBox">
+            <div class="workout_TXT">
+              <p class="workout_title">SNS</p>
+              <p class="workout_date">2022-2024</p>
+            </div>
+            <p class="workout_line"></p>
+            <div class="workout_Pic_sns"></div>
+            <button class="workout_button workout_button02">보러 가기</button>
+          </div>
+          <div class="workoutBox">
+            <div class="workout_TXT">
+              <p class="workout_title">뉴스레터</p>
+              <p class="workout_date">2023</p>
+            </div>
+            <p class="workout_line"></p>
+            <div class="workout_Pic_news"></div>
+            <button class="workout_button workout_button03">보러 가기</button>
+          </div>
+          <div class="workoutBox">
+            <div class="workout_TXT">
+              <p class="workout_title">외부 광고</p>
+              <p class="workout_date">2023</p>
+            </div>
+            <p class="workout_line"></p>
+            <div class="workout_Pic_ad"></div>
+            <button class="workout_button workout_button04">보러 가기</button>
+          </div>
+          <div class="workoutBox">
+            <div class="workout_TXT">
+              <p class="workout_title">웹페이지</p>
+              <p class="workout_date">2022</p>
+            </div>
+            <p class="workout_line"></p>
+            <div class="workout_Pic_web"></div>
+            <button class="workout_button workout_button05">보러 가기</button>
+          </div>
+    </div>
+  </div>
+
+    <!--01 이벤트 작업물 팝업-->
+    <div class="popWrap_event">
+      <div class="portfolio_event">
+         <button type="button" class="close" style="width: 40px; height: 40px; background-color: #fff; margin: 20px 20px 0px 0px;"></button>
+        <div class="dotBox_event">
+          <span class="dot_event active_event" onclick="currentSlide_event(1)"></span>
+          <span class="dot_event" onclick="currentSlide_event(2)"></span>
+          <span class="dot_event" onclick="currentSlide_event(3)"></span>
+          <span class="dot_event" onclick="currentSlide_event(4)"></span>
+          <span class="dot_event" onclick="currentSlide_event(5)"></span>
+        </div>
+  <!--쏙 이벤트 페이지-->
+        <div class="Portfolio_Box_event">
+            <!--이벤트 페이지 왼쪽 화면-->
+          <div class="event_left_01">
+            <div class="eventLeft_01 event_leftBox_01 leftBox"></div>
+            <img src="img/PC.png" class="event_pc1">
+            <div class="event_Monitor_01">
+              <img src="img/240520_EV.jpg" width="569" class="event_EV_01">
+          </div>
+           <p class="allPage" title="notice">화면에 마우스오버 시, 페이지 스크롤</p>
+          </div>
+            <!--이벤트 페이지 오른쪽 화면-->
+          <div class="event_right_01 rightBox">
+            <span class="portfolioNumber_event">시흥교육캠퍼스 쏙</span>
+            <h5>진행기간: 2024. 05. 20 ~ 2024. 05. 31 </h5>
+            <h1>'나만 알기 아까운' 소문내기 이벤트</h1>
+            <p class="portfolio_story_event">학습자가 개인 SNS에 쏙 사이트 링크를 포함하여 쏙을 홍보하는 게시글을 올리는 이벤트입니다.</p>
+          </div>
+        </div>
+
+        <div class="Portfolio_Box_event">
+          <!--이벤트 페이지 왼쪽 화면-->
+        <div class="event_left_02">
+          <div class="eventLeft_02 event_leftBox_02 leftBox"></div>
+          <img src="img/PC.png" class="event_pc1">
+          <div class="event_Monitor_02">
+            <img src="img/231201_EV.jpg" width="569" class="event_EV_02">
+        </div>
+        <p class="allPage" title="notice">화면에 마우스오버 시, 페이지 스크롤</p>
+        </div>
+          <!--이벤트 페이지 오른쪽 화면-->
+        <div class="event_right_02 rightBox">
+          <span class="portfolioNumber_event">시흥교육캠퍼스 쏙</span>
+          <h5>진행기간: 2023. 12. 01 ~ 2023. 12. 15 </h5>
+          <h1>쏙 연말일기<br>이벤트</h1>
+          <p class="portfolio_story_event">쏙을 이용 중인 학습자가 댓글로 사이트 이용 후기를 적는 이벤트입니다.</p>
+        </div>
+      </div>
+
+      <div class="Portfolio_Box_event">
+        <!--이벤트 페이지 왼쪽 화면-->
+      <div class="event_left_03">
+        <div class="eventLeft_03 event_leftBox_03 leftBox"></div>
+        <img src="img/PC.png" class="event_pc1">
+        <div class="event_Monitor_03">
+          <img src="img/230814_EV.jpg" width="569" class="event_EV_03">
+      </div>
+      <p class="allPage" title="notice">화면에 마우스오버 시, 페이지 스크롤</p>
+      </div>
+        <!--이벤트 페이지 오른쪽 화면-->
+      <div class="event_right_03 rightBox">
+        <span class="portfolioNumber_event">경기도 지식</span>
+        <h5>진행기간: 2023. 08. 14 ~ 2023. 09. 17</h5>
+        <h1>300만 회원 달성<br>이벤트</h1>
+        <p class="portfolio_story_event">이벤트 기한 내 300만 번째 가입한 회원을 추첨하는 이벤트입니다.</p>
+      </div>
+    </div>
+
+    <div class="Portfolio_Box_event">
+      <!--이벤트 페이지 왼쪽 화면-->
+    <div class="event_left_04">
+      <div class="eventLeft_04 event_leftBox_04 leftBox"></div>
+      <img src="img/PC.png" class="event_pc1">
+      <div class="event_Monitor_04">
+        <img src="img/230801_EV.jpg" width="569" class="event_EV_04">
+    </div>
+    <p class="allPage" title="notice">화면에 마우스오버 시, 페이지 스크롤</p>
+    </div>
+      <!--이벤트 페이지 오른쪽 화면-->
+    <div class="event_right_04 rightBox">
+      <span class="portfolioNumber_event">경기도 지식</span>
+      <h5>진행기간: 2023. 07. 12 ~ 2023. 08. 23</h5>
+      <h1>지식으로<br>화캉스 떠나요</h1>
+      <p class="portfolio_story_event">지식이 선정한 8월 화상강의를 학습자가 수강 후 개인 SNS에 수강 후기를 올리는 이벤트입니다.</p>
+    </div>
+  </div>
+
+  <div class="Portfolio_Box_event">
+    <!--이벤트 페이지 왼쪽 화면-->
+  <div class="event_left_05">
+    <div class="eventLeft_05 event_leftBox_05 leftBox"></div>
+    <img src="img/PC.png" class="event_pc1">
+    <div class="event_Monitor_05">
+      <img src="img/230703_EV.jpg" width="569" class="event_EV_05">
+  </div>
+  <p class="allPage" title="notice">화면에 마우스오버 시, 페이지 스크롤</p>
+  </div>
+    <!--이벤트 페이지 오른쪽 화면-->
+  <div class="event_right_05 rightBox">
+    <span class="portfolioNumber_event">경기도 지식</span>
+    <h5>진행기간: 2023. 07. 03 ~ 2023. 08. 13</h5>
+    <h1>지식 앱<br>다운로드 이벤트</h1>
+    <p class="portfolio_story_event">지식 앱 다운로드 후 인증 샷을 제출하는 이벤트입니다.</p>
+  </div>
+</div>
+</div>
+</div>
+
+
+    <!--02 sns 작업물 팝업-->
+    <div class="popWrap_sns">
+      <div class="portfolio_sns">
+         <button type="button" class="close" style="width: 40px; height: 40px; background-color: #fff; margin: 20px 20px 0px 0px;"></button>
+        <div class="dotBox_sns">
+          <span class="dot_sns active_sns" onclick="currentSlide_sns(1)"></span>
+          <span class="dot_sns" onclick="currentSlide_sns(2)"></span>
+          <span class="dot_sns" onclick="currentSlide_sns(3)"></span>
+          <span class="dot_sns" onclick="currentSlide_sns(4)"></span>
+        </div>
+  <!--11월 sns 카드뉴스 페이지-->
+        <div class="Portfolio_Box_sns">
+            <!--sns 왼쪽 화면-->
+          <div class="sns_left_01">
+            <div class="snsLeft_01 sns_leftBox_01 snsleftBox"></div>
+            <!--<p class="leftArrow"><img src="img/leftArrow.gif" style="width: 100px; height: 100px;" alt="left"></p>-->
+            <p class="rightArrow_01"><img src="img/rightArrow.gif" style="width: 100px; height: 100px;" alt="right"></p>
+            <div class="sns_slider_01">
+              <ul class="sns_slide_01">
+                <li><img src="img/sns_1120_01.jpg" alt="sns"></li>
+                <li><img src="img/sns_1120_02.jpg" alt="sns"></li>
+                <li><img src="img/sns_1120_03.jpg" alt="sns"></li>
+                <li><img src="img/sns_1120_04.jpg" alt="sns"></li>
+                <li><img src="img/sns_1120_05.jpg" alt="sns"></li>
+                <li><img src="img/sns_1120_06.jpg" alt="sns"></li>
+                <li><img src="img/sns_1120_07.jpg" alt="sns"></li>
+              </ul>
+           </div>
+           <p class="allPage" title="notice">페이지 우측 이동 가능</p>
+          </div>
+            <!--sns 오른쪽 화면-->
+          <div class="sns_right_01 rightBox">
+            <span class="portfolioNumber_sns">경기도 지식</span>
+            <h5>인스타그램 SNS 카드뉴스</h5>
+            <h1>11월 이벤트 중인<br>강좌</h1>
+            <p class="portfolio_story_sns">학습자의 수강을 독려하기 위한 'MZ한 리뷰' 컨셉의 카드뉴스입니다.</p>
+          </div>
+        </div>
+
+  <!--7월 sns 카드뉴스 페이지-->
+        <div class="Portfolio_Box_sns">
+          <!--sns 왼쪽 화면-->
+        <div class="sns_left_02">
+          <div class="snsLeft_02 sns_leftBox_02 snsleftBox"></div>
+          <!--<p class="leftArrow"><img src="img/leftArrow.gif" style="width: 100px; height: 100px;" alt="left"></p>-->
+          <p class="rightArrow_02"><img src="img/rightArrow.gif" style="width: 100px; height: 100px;" alt="right"></p>
+          <div class="sns_slider_02">
+            <ul class="sns_slide_02">
+              <li><img src="img/sns_0725_01.jpg" alt="sns"></li>
+              <li><img src="img/sns_0725_02.jpg" alt="sns"></li>
+              <li><img src="img/sns_0725_03.jpg" alt="sns"></li>
+              <li><img src="img/sns_0725_04.jpg" alt="sns"></li>
+              <li><img src="img/sns_0725_05.jpg" alt="sns"></li>
+              <li><img src="img/sns_0725_06.jpg" alt="sns"></li>
+              <li><img src="img/sns_0725_07.jpg" alt="sns"></li>
+            </ul>
+         </div>
+         <p class="allPage" title="notice">페이지 우측 이동 가능</p>
+        </div>
+          <!--sns 오른쪽 화면-->
+        <div class="sns_right_02 rightBox">
+          <span class="portfolioNumber_sns">경기도 지식</span>
+          <h5>인스타그램 SNS 카드뉴스</h5>
+          <h1>7월 이벤트 중인<br>강좌</h1>
+          <p class="portfolio_story_sns">여름을 맞아 '바캉스' 컨셉의 이벤트 강의 홍보용 카드뉴스입니다.</p>
+        </div>
+      </div>
+<!--sns 홍보 페이지-->
+<div class="Portfolio_Box_sns">
+  <!--이벤트 페이지 왼쪽 화면-->
+<div class="sns_left_03">
+  <div class="snsLeft_03 sns_leftBox_01 leftBox"></div>
+  <img src="img/PC.png" class="event_pc1">
+  <div class="sns_Monitor">
+    <img src="img/sns_0612_GPT.jpg" width="569" class="sns_EV">
+</div>
+ <p class="allPage" title="notice">화면에 마우스오버 시, 페이지 스크롤</p>
+</div>
+  <!--이벤트 페이지 오른쪽 화면-->
+<div class="sns_right_03 rightBox">
+  <span class="portfolioNumber_event">경기도 지식</span>
+  <h5>페이스북 SNS 이벤트 광고</h5>
+  <h1>나만의 ChatGPT<br>인공지능툴 만들기</h1>
+  <p class="portfolio_story_event">'미래지향적 인공지능'컨셉의 ai 화상 강의 홍보용 SNS 광고입니다.</p>
+</div>
+</div>
+
+  <!--페이스북 sns 카드뉴스 페이지-->
+  <div class="Portfolio_Box_sns">
+    <!--sns 왼쪽 화면-->
+  <div class="sns_left_04">
+    <div class="snsLeft_04 sns_leftBox_04 snsleftBox"></div>
+    <!--<p class="leftArrow"><img src="img/leftArrow.gif" style="width: 100px; height: 100px;" alt="left"></p>-->
+    <p class="rightArrow_04"><img src="img/rightArrow.gif" style="width: 100px; height: 100px;" alt="right"></p>
+    <div class="sns_slider_04">
+      <ul class="sns_slide_04">
+        <li><img src="img/sns_0424_01.jpg" alt="sns"></li>
+        <li><img src="img/sns_0424_02.jpg" alt="sns"></li>
+        <li><img src="img/sns_0424_03.jpg" alt="sns"></li>
+        <li><img src="img/sns_0424_04.jpg" alt="sns"></li>
+      </ul>
+   </div>
+   <p class="allPage" title="notice">페이지 우측 이동 가능</p>
+  </div>
+    <!--sns 오른쪽 화면-->
+  <div class="sns_right_04 rightBox">
+    <span class="portfolioNumber_sns">경기도 지식</span>
+    <h5>페이스북 SNS 카드뉴스</h5>
+    <h1>화상강의 홍보<br>카드뉴스</h1>
+    <p class="portfolio_story_sns">다양한 화상강의를 홍보하기 위해 심플하면서 가독성을 높인 카드뉴스입니다.</p>
+  </div>
+</div>
+    </div>
+    </div>
+
+
+    <!--03 뉴스레터 팝업-->
+    <div class="popWrap_news">
+      <div class="portfolio_news">
+         <button type="button" class="close" style="width: 40px; height: 40px; background-color: #fff; margin: 20px 20px 0px 0px;"></button>
+        <div class="dotBox_news">
+          <span class="dot_news active_news" onclick="currentSlide_news(1)"></span>
+          <span class="dot_news" onclick="currentSlide_news(2)"></span>
+          <span class="dot_news" onclick="currentSlide_news(3)"></span>
+          <span class="dot_news" onclick="currentSlide_news(4)"></span>
+        </div>
+  <!--뉴스레터 페이지-->
+        <div class="Portfolio_Box_news">
+            <!--뉴스레터 페이지 왼쪽 화면 01-->
+          <div class="news_left_01">
+            <div class="newsLeft_01 news_leftBox_01 leftBox"></div>
+            <img src="img/PC.png" class="news_pc1">
+            <div class="news_Monitor_01">
+              <img src="img/news_weekly_1228.jpg" width="569" class="news_EV_01">
+          </div>
+           <p class="allPage" title="notice">화면에 마우스오버 시, 페이지 스크롤</p>
+          </div>
+            <!--이벤트 페이지 오른쪽 화면 01-->
+          <div class="news_right_01 rightBox">
+            <span class="portfolioNumber_event">경기도 지식</span>
+            <h5>발행일: 2023년 12월 3주 </h5>
+            <h1>지식과 함께<br>N잡을 향한 도전</h1>
+            <p class="portfolio_story_event">키워드 '금융', '저금', '돈', '성실'을 컨셉으로 디자인한 뉴스레터입니다.</p>
+          </div>
+        </div>
+
+        <div class="Portfolio_Box_news">
+          <!--뉴스레터 페이지 왼쪽 화면 02-->
+        <div class="news_left_02">
+          <div class="newsLeft_02 news_leftBox_02 leftBox"></div>
+          <img src="img/PC.png" class="news_pc1">
+          <div class="news_Monitor_02">
+            <img src="img/news_weekly_1214.jpg" width="569" class="news_EV_02">
+        </div>
+         <p class="allPage" title="notice">화면에 마우스오버 시, 페이지 스크롤</p>
+        </div>
+          <!--이벤트 페이지 오른쪽 화면 02-->
+        <div class="news_right_02 rightBox">
+          <span class="portfolioNumber_event">경기도 지식</span>
+          <h5>발행일: 2023년 12월 2주 </h5>
+          <h1>자기관리 끝판왕<br>되어보세요!</h1>
+          <p class="portfolio_story_event">키워드 '온라인', '노력', '공부'를 컨셉으로 디자인한 뉴스레터입니다.</p>
+        </div>
+      </div>
+
+      <div class="Portfolio_Box_news">
+        <!--뉴스레터 페이지 왼쪽 화면 03-->
+      <div class="news_left_03">
+        <div class="newsLeft_03 news_leftBox_03 leftBox"></div>
+        <img src="img/PC.png" class="news_pc1">
+        <div class="news_Monitor_03">
+          <img src="img/news_weekly_1025.jpg" width="569" class="news_EV_03">
+      </div>
+       <p class="allPage" title="notice">화면에 마우스오버 시, 페이지 스크롤</p>
+      </div>
+        <!--이벤트 페이지 오른쪽 화면 04-->
+      <div class="news_right_03 rightBox">
+        <span class="portfolioNumber_event">경기도 지식</span>
+        <h5>발행일: 2023년 10월 4주 </h5>
+        <h1>유튜브 채널에<br>놀러오세요!</h1>
+        <p class="portfolio_story_event">유튜브 채널이 중심이 되어야하기 때문에 디자인 소스를 간결하게 넣고 색과 폰트 배치에 주의를 기울인 뉴스레터입니다.</p>
+      </div>
+    </div>
+
+    <div class="Portfolio_Box_news">
+      <!--뉴스레터 페이지 왼쪽 화면 04-->
+    <div class="news_left_04">
+      <div class="newsLeft_04 news_leftBox_04 leftBox"></div>
+      <img src="img/PC.png" class="news_pc1">
+      <div class="news_Monitor_04">
+        <img src="img/news_weekly_0927.jpg" width="569" class="news_EV_04">
+    </div>
+     <p class="allPage" title="notice">화면에 마우스오버 시, 페이지 스크롤</p>
+    </div>
+      <!--이벤트 페이지 오른쪽 화면 04-->
+    <div class="news_right_04 rightBox">
+      <span class="portfolioNumber_event">경기도 지식</span>
+      <h5>발행일: 2023년 9월 4주 </h5>
+      <h1>학습자가 뽑은<br>BEST 6 강의</h1>
+      <p class="portfolio_story_event">가장 좋은 강의를 소개하면서, 연말에 진행하는 연말대상 컨셉과 겹치지 않도록 디자인 한 뉴스레터입니다.</p>
+    </div>
+  </div>
+</div>
+</div>
+
+ <!--04 외부광고 팝업-->
+ <div class="popWrap_ad">
+  <div class="portfolio_ad">
+     <button type="button" class="close" style="width: 40px; height: 40px; background-color: #fff; margin: 20px 20px 0px 0px;"></button>
+<!--외부광고 페이지-->
+    <div class="Portfolio_Box_ad">
+        <!--외부광고 페이지 왼쪽 화면 01-->
+      <div class="ad_left_01">
+        <div class="adLeft_01 ad_leftBox_01 leftBox"></div>
+        <img src="img/PC.png" class="news_pc1">
+        <div class="ad_Monitor_01">
+          <img src="img/ad_230904_EV.jpg" width="569" class="ad_EV_01">
+      </div>
+       <p class="allPage" title="notice">화면에 마우스오버 시, 페이지 스크롤</p>
+      </div>
+        <!--외부광고 페이지 오른쪽 화면 01-->
+      <div class="ad_right_01 rightBox">
+        <span class="portfolioNumber_event">경기도 지식</span>
+        <h5>광고 게시일: 2023년 9월</h5>
+        <h1>슬기로운<br>화상강좌</h1>
+        <p class="portfolio_story_event">경기도 지식에서 라이브로 진행 예정인 화상강좌를 홍보하기 위한 광고입니다.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!--05 웹페이지 작업물 팝업-->
+  <div class="popWrap">
+        <div class="portfolio">
+           <button type="button" class="close" style="width: 40px; height: 40px; background-color: #fff; margin: 20px 20px 0px 0px;"></button>
+          <div class="dotBox">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+          </div>
+    <!--온라인서점 포트폴리오-->
+          <div class="Portfolio_Box">
+              <!--온라인서점 왼쪽 화면-->
+            <div class="library_left">
+              <div class="libraryLeft leftBox"></div>
+              <img src="img/PC.png" class="pc1">
+              <div class="library_Monitor">
+                <img src="img/portfolio_online_library.jpeg" width="567" class="library">
+                <img src="img/portfolio_online_library_sub.jpeg" width="567" class="librarySub">
+              </div>
+  
+              <p class="subPage" title="클릭하세요">Sub Page 미리보기</p>
+              <p class="mainPage" title="클릭하세요">Main Page로 돌아가기</p>
+            </div>
+              <!--온라인서점 오른쪽 화면-->
+            <div class="library_right rightBox">
+              <span class="portfolioNumber">NO.1</span>
+              <h5>API를 이용한 온라인 서점</h5>
+              <h1>ONLINE<br>BOOKSTORE</h1>
+              <p class="portfolio_story">카카오에서 배포하는 API 기능을 사용하여 제작한 온라인 서점 홈페이지입니다.</p>
+              <a class="btn" href="https://yoonhye-ju.github.io/Portfolio_OnlineBookStore/" target="_blank">Main
+                  Page</a>
+              <a class="btn" href="https://yoonhye-ju.github.io/Portfolio_OnlineBookStore/sub.html" target="_blank">Sub
+                  Page</a>
+            </div>
+          </div>
+
+    <!--WWF 포트폴리오-->
+          <div class="Portfolio_Box">
+          <!--WWF 왼쪽 화면-->
+            <div class="WWF_left">
+              <div class="WWFLeft leftBox"></div>
+              <img src="img/PC.png" class="pc2">
+            <!--WWF PC 화면-->
+              <div class="WWF_Monitor">
+                <img src="img/portfolio_WWF_pc.jpeg" width="568" class="WWF">
+                <img src="img/portfolio_WWFsub_pc.jpeg" width="568" class="WWFsubPC">
+              </div>
+            <!--WWF 타블렛 화면-->
+              <img src="img/tablet.png" class="tablet">
+              <div class="WWF_tablet">
+                <img src="img/portfolio_WWF_tablet.jpeg" class="WWFtablet" width="191">
+                <img src="img/portfolio_WWFsub_tablet.jpeg" width="191" class="WWFsubTablet">
+              </div>
+            <!--WWF 모바일 화면-->
+              <img src="img/mobile.png" class="mobile">
+              <div class="WWF_mobile">
+                <img src="img/portfolio_WWF_mobile.jpeg" class="WWFmobile" width="112">
+                <img src="img/portfolio_WWFsub_mobile.jpeg" width="112" class="WWFsubMobile">
+              </div>
+  
+              <p class="subPage" title="클릭하세요">Sub Page 미리보기</p>
+              <p class="mainPage" title="클릭하세요">Main Page로 돌아가기</p>
+            </div>
+          <!--WWF 오른쪽 화면-->
+            <div class="WWF_right rightBox">
+              <span class="portfolioNumber">NO.3</span>
+              <h5>WWF 홈페이지 리뉴얼</h5>
+              <h1>WWF<br>HOMEPAGE</h1>
+              <p class="portfolio_story">국제 비정부 자연보전 기구 WWF 사이트에 반응형 페이지를 적용한 두 번째 포트폴리오입니다.</p>
+              <a class="btn" href="https://yoonhye-ju.github.io/Portfolio_WWF/" target="_blank">Main Page</a>
+              <a class="btn" href="https://yoonhye-ju.github.io/Portfolio_WWF/sub.html" target="_blank">Sub
+                  Page</a>
+              <a class="btn" href="pdf/WWF_Project.pdf" target="_blank">PDF 보기</a>
+            </div>
+          </div>
+  
+    <!--만개의레시피 포트폴리오-->
+          <div class="Portfolio_Box">
+              <!--만개의레시피 왼쪽 화면-->
+            <div class="tenThousand_left">
+              <div class="tenThousandLeft leftBox"></div>
+              <!--만개의레시피 PC 화면-->
+              <img src="img/PC.png" class="pc2">
+  
+              <div class="tenThousand_Monitor">
+                <img src="img/portfolio_10000_pc.jpeg" width="568" class="recipe">
+                <img src="img/portfolio_10000_pcSub.jpeg" width="568" class="recipeSub">
+              </div>
+              <!--만개의레시피 타블렛 화면-->
+              <img src="img/tablet.png" class="tablet">
+  
+              <div class="tenThousand_tablet">
+                <img src="img/portfolio_10000_tablet.jpeg" class="recipetablet" width="191">
+                <img src="img/portfolio_10000_tabletSub.jpeg" class="recipetabletSub" width="191">
+              </div>
+              <!--만개의레시피 모바일 화면-->
+              <img src="img/mobile.png" class="mobile">
+  
+              <div class="tenThousand_mobile">
+                <img src="img/portfolio_10000_mobile.jpeg" class="recipemobile" width="112">
+                <img src="img/portfolio_10000_mobileSub.jpeg" class="recipemobileSub" width="112">
+              </div>
+              <p class="subPage" title="클릭하세요">Sub Page 미리보기</p>
+              <p class="mainPage" title="클릭하세요">Main Page로 돌아가기</p>
+            </div>
+              <!--만개의레시피 오른쪽 화면-->
+            <div class="tenThousand_right rightBox">
+              <span class="portfolioNumber">NO.4</span>
+              <h5>만개의레시피 홈페이지 리뉴얼</h5>
+              <h1>10000<br>RECIPES</h1>
+              <p class="portfolio_story">요리 사이트'만개의레시피'에 Java Script와 반응형 페이지(미디어쿼리)를 적용한 첫 번째 포트폴리오입니다.</p>
+              <a class="btn" href="https://yoonhye-ju.github.io/Portfolio_10000recipe/" target="_blank">Main
+                  Page</a>
+              <a class="btn" href="https://yoonhye-ju.github.io/Portfolio_10000recipe/sub.html" target="_blank">Sub
+                  Page</a>
+              <a class="btn" href="pdf/Portfolio_recipe.pdf" target="_blank">PDF 보기</a>
+            </div>
+          </div>
+  <!--경복궁 포트폴리오-->
+          <div class="Portfolio_Box">
+          <!--경복궁 왼쪽 화면-->
+            <div class="korea_left">
+              <div class="koreaLeft leftBox"></div>
+              <img src="img/PC.png" class="pc1">
+              <div class="korea_Monitor">
+                <img src="img/portfolio_korea_pc.jpeg" width="568" class="korea">
+              </div>
+            </div>
+          <!--경복궁 오른쪽 화면-->
+            <div class="korea_right rightBox">
+              <span class="portfolioNumber">NO.5</span>
+              <h5>팀 프로젝트</h5>
+              <h1>경복궁<br>별빛 아래를 걷다</h1>
+              <p class="portfolio_story">경복궁의 역사와 함께 기존 홈페이지에서 찾기 힘든 관광 요소를 소개하는 페이지를 더한 리뉴얼 사이트입니다.</p>
+              <a class="btn" href="https://yoonhye-ju.github.io/Portfolio_kyungbokgung_team/" target="_blank">Team
+                  Page</a>
+              <a class="btn" href="https://yoonhye-ju.github.io/Portfolio_kyungbokgung_food/" target="_blank">My
+                  Page</a>
+              <a class="btn" download href="pdf/Portfolio_kyungbokgung.pdf" target="_blank">PDF 보기</a>
+            </div>
+          </div>
+  <!--조말론 포트폴리오-->
+          <div class="Portfolio_Box">
+            <!--조말론 왼쪽 화면-->
+            <div class="perfume_left">
+              <div class="perfumeLeft leftBox"></div>
+  
+              <img src="img/PC.png" class="pc1">
+              <div class="perfume_Monitor">
+                <img src="img/portfolio_perfume_main.jpeg" width="568" class="perfume">
+                <img src="img/portfolio_perfume_sub.jpeg" width="568" class="perfumeSub">
+              </div>
+              <p class="subPage" title="클릭하세요">Sub Page 미리보기</p>
+              <p class="mainPage" title="클릭하세요">Main Page로 돌아가기</p>
+              <span></span>
+            </div>
+            <!--조말론 오른쪽 화면-->
+            <div class="perfume_right rightBox">
+              <span class="portfolioNumber">NO.6</span>
+              <h5>쇼핑몰 홈페이지 디자인</h5>
+              <h1>JOMALONE<br>LONDON</h1>
+              <p class="portfolio_story">HTML과 CSS로만 작업한 향수 브랜드 JOMALONE LONDON의 온라인 쇼핑몰 사이트입니다.</p>
+              <a class="btn" href="https://yoonhye-ju.github.io/Portfolio_shoppingmall/" target="_blank">Main
+                  Page</a>
+              <a class="btn" href="https://yoonhye-ju.github.io/Portfolio_shoppingmall/jomalone_hompage_sub.html" target="_blank">Sub
+                  Page</a>
+              <a class="btn" href="pdf/Portfolio_shop.pdf" target="_blank">PDF 보기</a>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  
+  <!--역량 및 스킬-->
+<div id="Box4">
+  <div class="skill">
+    <img src="img/icon03.gif" alt="icon">
+    <p>Yoon’s Ability</p>
+    <span>역량 및 스킬</span>
+  </div>
+  <div class="skillBox">
+  <div class="skill_Box01">
+    <div class="picBox_fifth"></div>
+    <div class="picBox_sixth"></div>
+  </div>
+  <div class="skill_Box02">
+  <div class="photoshopBox">
+    <h4 class="program">Photoshop</h4>
+     <div class="photoshopBar"></div>
+     <span class="meterbar">95%</span>
+   </div>
+  
+   <div class="illustrationBox">
+     <h4 class="program">Illustration</h4>
+      <div class="illustrationBar"></div>
+      <span class="meterbar">95%</span>
+    </div>
+  
+    <div class="indesignBox">
+     <h4 class="program">Indesign</h4>
+     <div class="indesignBar"></div>
+      <span class="meterbar">80%</span>
+    </div>
+
+     <div class="uxuiBox">
+       <h4 class="program">UX/UI</h4>
+        <div class="uxuiBar"></div>
+        <span class="meterbar">85%</span>
+        </div>
+      <div class="figmaBox">
+        <h4 class="program">figma</h4>
+         <div class="figmaBar"></div>
+          <span class="meterbar">70%</span>
+        </div>
+     </div>
+     </div>
+    </div>
+
+
+  <!--연락처-->
+  <div id="Box5">
+    <div class="contact">
+      <img src="img/icon04.gif" alt="icon">
+      <p>Contact to Yoon</p>
+      <span>연락처</span>
+    </div>
+    <div class="mailBox">
+      <div class="gmailBox">
+        <img src="img/contact_gmail.png" class="gmail" width="40">
+        <span class="gmail_ID">yoonhyeju426@gmail.com</span>
+      </div>
+      <div class="kakaoBox">
+        <img src="img/contact_kakao.png" class="kakao" width="40">
+        <a href="https://open.kakao.com/o/sWqthU0d"><span class="kakao_ID">OPEN KAKAO: YoonHyeju</span></a>
+      </div>
+      <div class="naverBox">
+        <img src="img/contact_naver.png" class="naver" width="30">
+        <span class="naver_ID">tianshiapz@naver.com</span>
+      </div>
+      <div class="phoneBox">
+        <img src="img/contact_phone.png" class="phone" width="20">
+        <a href="tel://01085300436"><span class="phoneNumber">010-8530-0436</span></a>
+      </div>
+    </div>
+</div>
+
+<!--<a href="https://kr.freepik.com/search#uuid=58db8b62-9389-4bfc-8b6c-7a22c87c540d">Freepik 제작 아이콘</a><a href="https://kr.freepik.com/search">Freepik 제작 아이콘</a>-->
+</body>
+</html>
